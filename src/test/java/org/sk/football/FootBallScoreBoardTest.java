@@ -6,6 +6,8 @@ import org.sk.exception.MatchNotFoundException;
 import org.sk.exception.StartMatchException;
 import org.sk.exception.UpdateScoreException;
 import org.sk.modal.Match;
+import org.sk.scoreboard.IScoreBoard;
+import org.sk.scoreboard.ScoreBoard;
 import org.sk.storage.ScoreBoardStorage;
 
 import java.util.List;
@@ -14,12 +16,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class FootBallScoreBoardTest {
 
-    private FootBallScoreBoard footBallScoreBoard;
+    private IScoreBoard footBallScoreBoard;
     private ScoreBoardStorage scoreBoardStorage;
 
     @BeforeEach
     public void setUp() {
-        footBallScoreBoard = new FootBallScoreBoard();
+        footBallScoreBoard = ScoreBoard.getInstance();
         scoreBoardStorage = ScoreBoardStorage.getInstance();
     }
 
