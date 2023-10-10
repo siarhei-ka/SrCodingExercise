@@ -15,11 +15,10 @@ class ScoreBoardStorageTest {
     @BeforeEach
     void setUp() {
         scoreBoardStorage = ScoreBoardStorage.getInstance();
-        scoreBoardStorage.getAll().stream()
-                         .forEach(m -> {
-                             System.out.println(m);
-                             scoreBoardStorage.remove(m);
-                         });
+
+        while(scoreBoardStorage.getAll().size() !=0) {
+            scoreBoardStorage.remove(scoreBoardStorage.getAll().get(0));
+        }
     }
 
     @Test
