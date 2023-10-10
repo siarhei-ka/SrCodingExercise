@@ -46,6 +46,7 @@ scoreBoard.updateScore("HomeTeam", "AwayTeam", 1, 2);
 
 Finish match:
 ```java
+// throws MatchNotFoundException when Match not found
 scoreBoard.finishMatch("HomeTeam", "AwayTeam");
 ```
 
