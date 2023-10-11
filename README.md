@@ -39,7 +39,7 @@ Update score we new values:
 // throws MatchNotFoundException when Match not found
 // throws UpdateScoreException when new values are:
 //                1. negative
-//                2. new score less than existion
+//                2. new score less than existing 
 //                3. (total score + 1) != (newHomeTeamScore + awayTeamScore) 
 scoreBoard.updateScore("HomeTeam", "AwayTeam", 1, 2);
 ```
