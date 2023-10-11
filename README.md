@@ -30,7 +30,7 @@ IScoreBoard scoreBoard = ScoreBoard.getInstance();
 
 Start a new match:
 ```java
-// throws StartMatchException when Match alredy started.
+// throws StartMatchException when Match already started.
 scoreBoard.startNewMatch("HomeTeam", "AwayTeam"));
 ```
 
